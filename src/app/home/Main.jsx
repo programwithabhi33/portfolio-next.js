@@ -10,7 +10,7 @@ const Main = () => {
                         <div className="flex flex-col sm:flex-row mt-10">
                             <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                                 <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                                    <Image src={"/me.jpeg"} width={150} height={150} className="rounded-lg"/>
+                                    <Image src={"/me.jpeg"} width={150} height={150} className="rounded-lg" alt="Abhishek Biranje"/>
                                 </div>
                                 <div className="flex flex-col items-center text-center justify-center">
                                     <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Abhishek Biranje</h2>
