@@ -5,6 +5,10 @@ const blogCardsData = [
     { title: "Second Article", description: "Second article description" },
     { title: "Third Article", description: "Third article description" },
     { title: "Fourth Article", description: "Fourth article description" },
+    { title: "Fifth Article", description: "Fifth article description" },
+    { title: "Sixth Article", description: "Sixth article description" },
+    { title: "Seventh Article", description: "Seventh article description" },
+    { title: "Eighth Article", description: "Eighth article description" },
 ]
 const BlogCards = () => {
     return (

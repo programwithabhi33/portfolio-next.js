@@ -1,8 +1,6 @@
-import React from 'react'
-
 const SearchInput = () => {
     return (
-        <div className='container flex gap-4 mx-auto items-center justify-center'>
+        <div className='container flex gap-4 mx-auto items-center justify-center sticky top-16 z-20'>
             <input
                 id="search"
                 name="search"

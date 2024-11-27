@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="sticky top-0 z-10 bg-white">
             <header className="text-gray-600 body-font">
-                <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
                     <Link href={"/"} className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                         <Image src={"/logo.png"} width={50} height={50} alt="LogoImage"/>
                         <span className="text-xl font-semibold uppercase">Programwithabhi</span>

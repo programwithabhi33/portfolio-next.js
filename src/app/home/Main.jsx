@@ -19,7 +19,7 @@ const Main = () => {
                                 </div>
                             </div>
                             <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                                <p className="leading-relaxed text-lg mb-4">I&aposm full stack developer with expert in JavaScript, NodeJS, React and also proficient in PHP framework&aposs like laravel, codeigniter, etc. I like to do backend, networking and devops stuff as well.</p>
+                                <p className="leading-relaxed text-lg mb-4">I"m full stack developer with expert in JavaScript, NodeJS, React and also proficient in PHP framework&aposs like laravel, codeigniter, etc. I like to do backend, networking and devops stuff as well.</p>
                             </div>
                         </div>
                     </div>
