@@ -1,7 +1,8 @@
+import mongoose from "mongoose";
+
 const blogArticleSchema = new mongoose.Schema({
     title: String,
-    description: Text,
-    createdAt: Date.now() 
+    description: String,
 });
 
-export const BlogArticle = mongoose.model('BlogArticle', blogArticleSchema);
+export const BlogArticle = mongoose.models.BlogArticle || mongoose.model('BlogArticle', blogArticleSchema);
