@@ -1,8 +1,9 @@
 import React from 'react'
 import { getBlogArticles } from '../server-actions';
 
-const BlogCards = async() => {
-    const blogCardsData = await getBlogArticles();
+const BlogCards = async () => {
+    //const blogCardsData = await getBlogArticles();
+    const blogCardsData = [];
     return (
         <div>
             <section className="text-gray-600 body-font" >

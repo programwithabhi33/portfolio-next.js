@@ -7,8 +7,8 @@ const page = () => {
             <div className="flex justify-center align-baseline">
                 <span className="text-base">currently working (Under Construction)</span>
             </div>
-            <SearchInput />
-            <BlogCards />
+            {/*<SearchInput />*/}
+            {/*<BlogCards />*/}
         </>
 
     )
