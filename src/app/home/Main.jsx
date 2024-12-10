@@ -20,7 +20,9 @@ const Main = () => {
                                 </div>
                             </div>
                             <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                                <p className="leading-relaxed text-lg mb-4">I"m full stack developer with expert in JavaScript, NodeJS, React and also proficient in PHP framework"s like laravel, codeigniter, etc. I like to do backend, networking and devops stuff as well.</p>
+                                <p className="leading-relaxed text-lg mb-4">
+                                    I&apos;m a full-stack developer with expertise in JavaScript, NodeJS, React, and proficiency in PHP frameworks like Laravel, CodeIgniter, etc. I like to do backend, networking, and DevOps stuff as well.
+                                </p>
                                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                                     <a target="__blank" href="https://github.com/programwithabhi33" className="ml-3 text-gray-500 cursor-pointer">
                                         <svg fill="currentColor" className="w-5 h-5" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
