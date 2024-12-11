@@ -4,7 +4,7 @@ import BlogCards from './BlogCards'
 const page = () => (
     <>
         <section className="m-8">
-        <SearchInput />
+            <SearchInput />
         </section>
         <BlogCards />
     </>
