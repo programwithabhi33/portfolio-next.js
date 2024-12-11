@@ -1,8 +1,14 @@
 "use server"
-import { connectToDb } from "@/db/connection";
 import { BlogArticle } from "@/db/models/BlogArticles";
+import { checkConnectionBeforeMakingDBAction } from "./checkConnection";
 
-//await connectToDb();
-export async function getBlogArticles(){
+async function getBlogArticlesFromDB(){
     return await BlogArticle.find()
+}
+export async function getBlogArticles(){
+ return checkConnectionBeforeMakingDBAction(getBlogArticlesFromDB)
+}
+export async function createSampleBlogArticle(){
+    let article = await new BlogArticle({title: "sample blog title", description: "sample blog description", slug: "slug"})
+    article.save();
 }
