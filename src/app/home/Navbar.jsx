@@ -1,6 +1,9 @@
+"use client"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 const Navbar = () => {
+    const pathName = usePathname();
     return (
         <nav className="sticky top-0 z-10 bg-white">
             <header className="text-gray-600 body-font">
@@ -9,9 +12,9 @@ const Navbar = () => {
                         <span className="text-xl font-semibold">Hi Abhishek here!</span>
                     </span>
                     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                        <Link href={"/"} className="mr-5 hover:text-gray-900">Home</Link>
-                        <Link href={"/blog"} className="mr-5 hover:text-gray-900">Blog</Link>
-                        <Link href={"/contact"} className="mr-5 hover:text-gray-900">Contact Me</Link>
+                        <Link href={"/"} className={`mr-5 text-gray-500 hover:text-gray-900 ${pathName == "/" ? "text-black": ""}`}>Home</Link>
+                        <Link href={"/blog"} className={`mr-5 text-gray-500 hover:text-gray-900 ${pathName == "/blog" ? "text-black": ""}`}>Blog</Link>
+                        <Link href={"/contact"} className={`mr-5 text-gray-500 hover:text-gray-900 ${pathName == "/contact" ? "text-black": ""}`}>Contact Me</Link>
                     </nav>
                 </div>
             </header>

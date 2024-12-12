@@ -8,7 +8,9 @@ async function getBlogArticlesFromDB(){
 export async function getBlogArticles(){
  return checkConnectionBeforeMakingDBAction(getBlogArticlesFromDB)
 }
-export async function createSampleBlogArticle(){
-    let article = await new BlogArticle({title: "sample blog title", description: "sample blog description", slug: "slug"})
-    article.save();
+async function getBlogArticlesFromSlugFromDB(slug){
+    return await BlogArticle.find({slug})
+}
+export async function getBlogArticlesFromSlug(slug){
+ return checkConnectionBeforeMakingDBAction(getBlogArticlesFromSlugFromDB, slug)
 }
