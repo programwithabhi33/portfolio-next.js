@@ -3,9 +3,9 @@ import SearchInput from './SearchInput'
 import BlogCards from './BlogCards'
 const page = () => (
     <>
-        <section className="m-8">
+        {/* <section className="m-8">
             <SearchInput />
-        </section>
+        </section> */}
         <BlogCards />
     </>
 

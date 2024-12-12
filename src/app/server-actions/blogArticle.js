@@ -8,7 +8,14 @@ async function getBlogArticlesFromDB(){
 export async function getBlogArticles(){
  return checkConnectionBeforeMakingDBAction(getBlogArticlesFromDB)
 }
+async function getBlogArticlesFromSlugFromDB(slug){
+    return await BlogArticle.find({slug})
+}
+export async function getBlogArticlesFromSlug(slug){
+ return checkConnectionBeforeMakingDBAction(getBlogArticlesFromSlugFromDB, slug)
+}
+
 export async function createSampleBlogArticle(){
-    let article = await new BlogArticle({title: "sample blog title", description: "sample blog description", slug: "slug"})
-    article.save();
+    let blogArticle = await new BlogArticle({title: "first blog title", content: "first blog content", slug: "first-blog-slug", category: "JavaScript"});
+    blogArticle.save();
 }
