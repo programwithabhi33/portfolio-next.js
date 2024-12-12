@@ -14,3 +14,8 @@ async function getBlogArticlesFromSlugFromDB(slug){
 export async function getBlogArticlesFromSlug(slug){
  return checkConnectionBeforeMakingDBAction(getBlogArticlesFromSlugFromDB, slug)
 }
+
+export async function createSampleBlogArticle(){
+    let blogArticle = await new BlogArticle({title: "first blog title", content: "first blog content", slug: "first-blog-slug", category: "JavaScript"});
+    blogArticle.save();
+}
