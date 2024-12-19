@@ -1,3 +1,4 @@
+"use cache"
 import React from 'react'
 import { getBlogArticles } from '../server-actions/blogArticle';
 import Link from 'next/link';
@@ -15,7 +16,7 @@ const BlogCards = async () => {
                                 <span className="inline-block py-1 px-2 rounded bg-indigo-50 text-black text-xs font-medium tracking-widest">{article.category}</span>
                                 <div className="h-full bg-opacity-75 pt-2 pb-4 rounded-lg overflow-hidden text-start relative">
                                     <Link href={`/blog/${article.slug}`} className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3 hover:underline">{article.title}</Link>
-                                    <p className="leading-relaxed mb-3">{article.content.slice(0, 30)}{article.content.length > 30 ? "..." : ""}</p>
+                                    <p className="leading-relaxed mb-3">{article.content.slice(0, 100)}{article.content.length > 100 ? "..." : ""}</p>
                                     <Link href={`/blog/${article.slug}`} className="text-indigo-500 inline-flex items-center cursor-pointer">Read More
                                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
