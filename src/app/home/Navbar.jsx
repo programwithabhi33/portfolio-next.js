@@ -25,8 +25,8 @@ const Navbar = () => {
     return (
         <nav className="sticky top-0 z-10 bg-white">
             <header className="text-gray-600 body-font">
-                <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
-                    <span className="flex items-center text-gray-900 mb-4 md:mb-0">
+                <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+                    <span className="flex items-center text-gray-900 mb-2 md:mb-0">
                         <span className="text-xl font-semibold">{navTitle}</span>
                     </span>
                     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
