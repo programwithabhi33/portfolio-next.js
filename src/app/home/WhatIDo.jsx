@@ -10,7 +10,7 @@ export const WhatIDo = () => {
             I’m not just a developer—I’m a creator of digital solutions. With
             expertise in full-stack development, cloud integrations, and DevOps,
             I transform ideas into robust and impactful applications. Whether
-            it's crafting seamless user experiences, optimizing backend systems,
+            it&apos;s crafting seamless user experiences, optimizing backend systems,
             or integrating AI, I thrive on solving complex challenges with
             innovative technology.{" "}
           </p>

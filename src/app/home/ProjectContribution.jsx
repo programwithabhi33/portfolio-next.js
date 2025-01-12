@@ -112,7 +112,7 @@ export const ProjectContribution = () => {
               </h2>
               <p className="leading-relaxed text-base">
                 A Music distribution platform with features like managing
-                artist's, talent aquasitions, etc,. with highly custimized
+                artist&apos;s, talent aquasitions, etc,. with highly custimized
                 revenue module using PHP framework CodeIgniter and MySQL.
               </p>
               <a

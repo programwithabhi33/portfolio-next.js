@@ -7,7 +7,7 @@ const ChangeNavTitleBySlug = ({ navTitle }) => {
   const dispatch = useDispatch();
   useEffect(()=>{
    dispatch(changeTitle(navTitle)); 
-  },[])
+  })
 }
 
 export default ChangeNavTitleBySlug
