@@ -1,6 +1,6 @@
 export const WhatIDo = () => {
   return (
-    <section className="text-gray-600 body-font border-t-2 border-b-2 border-gray-200 border-opacity-80 bg-gradient-to-r from-fuchsia-100 to-cyan-100">
+    <section className="text-gray-600 body-font bg-gradient-to-r from-fuchsia-100 to-cyan-100/75 bg-gradient-to-b from-fuchsia-100 to-cyan-100">
       <div className="container px-5 py-8 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">

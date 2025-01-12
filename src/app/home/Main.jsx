@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Main = () => {
   return (
     <>
-      <section className="text-gray-600 body-font bg-gradient-to-r from-sky-100 to-red-100">
+      <section className="text-gray-600 body-font bg-gradient-to-r from-sky-100 to-red-200 bg-gradient-to-b from-slate-100/75 to-fuchsia-100">
         <div className="container px-5 py-12 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">
             <div className="flex flex-col sm:flex-row mt-10">
