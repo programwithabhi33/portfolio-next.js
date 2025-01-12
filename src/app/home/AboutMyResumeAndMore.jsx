@@ -2,7 +2,7 @@ export const AboutMyResumeAndMore = () => {
   return (
     <section className="text-gray-600 body-font border-t-2 border-gray-200 border-opacity-60">
       <div className="container px-5 py-4 mx-auto flex flex-wrap">
-        <div className="md:w-1/2 w-full my-4 px-2">
+        <div className="md:w-1/2 w-full my-4 px-4">
           <h2 className="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2">
             My Resume
           </h2>
@@ -25,7 +25,7 @@ export const AboutMyResumeAndMore = () => {
             </svg>
           </a>
         </div>
-        <div className="md:w-1/2 w-full my-4 px-2">
+        <div className="md:w-1/2 w-full my-4 px-4">
           <p className="leading-relaxed text-base">
             Taxidermy bushwick celiac master cleanse microdosing seitan. Fashion
             axe four dollar toast truffaut, direct trade kombucha brunch

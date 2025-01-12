@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Main = () => {
   return (
     <>
-      <section className="text-gray-600 body-font bg-gradient-to-r from-sky-200 to-red-200">
+      <section className="text-gray-600 body-font bg-gradient-to-r from-sky-100 to-red-100">
         <div className="container px-5 py-12 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">
             <div className="flex flex-col sm:flex-row mt-10">
@@ -16,31 +16,59 @@ const Main = () => {
                     src={"/me.jpeg"}
                     width={250}
                     height={250}
-                    className="rounded-full object-cover w-[250px] h-[250px]"
+                    className="rounded-full object-contain w-[150px] h-[150px] xl:object-cover xl:w-[250px] xl:h-[250px]"
                     alt="Abhishek Biranje"
                   />
                 </div>
                 <div className="flex flex-col items-center text-center justify-center">
-                  <h1 className="font-medium title-font m-4 text-gray-900 text-4xl">
+                  <h1 className="font-medium title-font m-4 text-gray-900 text-2xl xl:text-4xl">
                     Abhishek Biranje
                   </h1>
-                  <p className="text-2xl">
+                  <p className="text-xl xl:text-2xl">
                     Passionate about computer science.
                   </p>
-                  <p className="text-2xl">
-                    Also known as <b className="underline decoration-indigo-500">programwithabhi</b> on the internet.
+                  <p className="text-xl xl:text-2xl">
+                    Also known as{" "}
+                    <b className="underline decoration-indigo-500">
+                      programwithabhi
+                    </b>{" "}
+                    on the Internet.
                   </p>
                 </div>
               </div>
               <div className="flex flex-col align-center justify-center w-full sm:pl-8 sm:py-8 sm:border-l border-gray-400 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <p className="leading-relaxed text-xl mb-4">
-                  I&apos;m a Full Stack Developer with expertise in JavaScript,
-                  NodeJS, React, and proficiency in PHP frameworks like Laravel,
-                  CodeIgniter, etc. I like to do backend, networking, and DevOps
-                  stuff as well.
+                <p className="leading-relaxed text-xl xl:text-2xl mb-4">
+                  I&apos;m a Full Stack Developer with expertise in{" "}
+                  <span className="underline decoration-sky-500 font-medium">
+                    JavaScript
+                  </span>
+                  ,
+                  <span className="underline decoration-pink-500 font-medium">
+                    NodeJS
+                  </span>
+                  ,{" "}
+                  <span className="underline decoration-yellow-500 font-medium">
+                    React
+                  </span>
+                  , and proficiency in{" "}
+                  <span className="underline decoration-purple-500 font-medium">
+                    PHP
+                  </span>{" "}
+                  frameworks like{" "}
+                  <span className="underline decoration-rose-500 font-medium">
+                    Laravel
+                  </span>
+                  ,{" "}
+                  <span className="underline decoration-lime-500 font-medium">
+                    CodeIgniter
+                  </span>
+                  , etc. I like to do Backend, Networking, and DevOps stuff as
+                  well.
                 </p>
                 <span className="inline-flex sm:mt-0 mt-4 justify-center sm:justify-start">
-                  <p className="text-xs font-medium title-font grid items-center text-indigo-400/75">checkout my social links here</p>
+                  <p className="text-xs xl:text-sm font-medium title-font grid items-center text-gray-500/75">
+                    checkout my social links here
+                  </p>
                   <div className="grid items-center mr-2">
                     <svg
                       fill="none"

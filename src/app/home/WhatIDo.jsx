@@ -1,7 +1,7 @@
 export const WhatIDo = () => {
   return (
-    <section className="text-gray-600 body-font border-t-2 border-b-2 border-gray-200 border-opacity-60">
-      <div className="container px-5 py-4 mx-auto">
+    <section className="text-gray-600 body-font border-t-2 border-b-2 border-gray-200 border-opacity-80 bg-gradient-to-r from-fuchsia-100 to-cyan-100">
+      <div className="container px-5 py-8 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
             What I Do
@@ -16,7 +16,7 @@ export const WhatIDo = () => {
           </p>
         </div>
         <div className="flex flex-wrap">
-          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-300 border-opacity-80">
             <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
               Frontend Development
             </h2>
@@ -27,7 +27,7 @@ export const WhatIDo = () => {
               solutions that captivate users and drive engagement.
             </p>
           </div>
-          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-300 border-opacity-80">
             <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
               Backend Development
             </h2>
@@ -39,7 +39,7 @@ export const WhatIDo = () => {
               Laravel, CodeIgniter and Django.
             </p>
           </div>
-          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-300 border-opacity-80">
             <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
               Cloud Integrations 
             </h2>
@@ -50,7 +50,7 @@ export const WhatIDo = () => {
               infrastructure to deliver high availability and performance.
             </p>
           </div>
-          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 xl:border-r-2 border-gray-300 border-opacity-80">
             <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
               Computer Networking
             </h2>
