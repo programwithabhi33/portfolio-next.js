@@ -5,14 +5,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
+const toggleDarkMode = () => {
+  document.documentElement.classList.toggle("dark");
+}
 const Navbar = () => {
   const pathName = usePathname();
   const dispatch = useDispatch();
   const navbarRef = useRef(null);
+  const darkModeRef = useRef(null);
 
-  useEffect((_) => {
-    const navbarClassList = ["shadow", "shadow-md", "rounded-full"];
+  useEffect(() => {
+    const navbarClassList = ["shadow", "shadow-md"];
     const navbar = navbarRef.current;
     const handleScroll = debounce(function () {
       if (window.scrollY > 50) {
@@ -23,29 +26,28 @@ const Navbar = () => {
     }, 100);
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    darkModeRef.current.addEventListener("click",toggleDarkMode);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if(darkModeRef.current) darkModeRef.current.removeEventListener("click", toggleDarkMode);
+    };
   });
 
-  useEffect(
-    (_) => {
-      let navbarTitleContainVariable;
-      if (pathName == "/") {
-        navbarTitleContainVariable = "Hi, Abhishek here";
-      } else if (pathName == "/blog") {
-        navbarTitleContainVariable = "Abhishek's blogs";
-      } else if (pathName == "/contact") {
-        navbarTitleContainVariable = "Contact to Abhishek";
-      }
-      dispatch(changeTitle(navbarTitleContainVariable));
-    },
-    [pathName],
-  );
+  useEffect(() => {
+    let navbarTitleContainVariable;
+    if (pathName == "/") {
+      navbarTitleContainVariable = "Hi, Abhishek here";
+    } else if (pathName == "/blog") {
+      navbarTitleContainVariable = "Abhishek's blogs";
+    } else if (pathName == "/contact") {
+      navbarTitleContainVariable = "Contact to Abhishek";
+    }
+    dispatch(changeTitle(navbarTitleContainVariable));
+  }, [pathName]);
   const navTitle = useSelector((state) => state.navTitle.text);
   return (
-    <nav
-      ref={navbarRef}
-      className="sticky top-0 z-10 bg-slate-200/75"
-    >
+    <nav ref={navbarRef} className="sticky top-0 z-10 bg-slate-200/75 dark:bg-black">
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
           <span className="flex items-center text-gray-900 mb-2 md:mb-0">
@@ -70,6 +72,7 @@ const Navbar = () => {
             >
               Contact Me
             </Link>
+            <button ref={darkModeRef}>Toggle Dark Mode</button>
           </nav>
         </div>
       </header>
