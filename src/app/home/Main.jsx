@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Main = () => {
   return (
     <>
-      <section className="text-gray-600 body-font bg-gradient-to-r from-sky-100 to-red-200 bg-gradient-to-b from-slate-100/75 to-fuchsia-100">
+      <section className="dark:text-gray-200 text-gray-600 body-font dark:bg-gradient-to-r dark:from-sky-700 dark:to-slate-800 bg-gradient-to-r from-sky-100 to-red-200 dark:bg-gradient-to-b dark:from-slate-700 dark:to-fuchsia-900/75 bg-gradient-to-b from-slate-100/75 to-fuchsia-100">
         <div className="container px-5 py-12 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">
             <div className="flex flex-col sm:flex-row mt-10">
@@ -21,7 +21,7 @@ const Main = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center text-center justify-center">
-                  <h1 className="font-medium title-font m-4 text-gray-900 text-2xl xl:text-4xl">
+                  <h1 className="font-medium title-font m-4 dark:text-gray-200 text-gray-900 text-2xl xl:text-4xl">
                     Abhishek Biranje
                   </h1>
                   <p className="text-xl xl:text-2xl">
@@ -66,7 +66,7 @@ const Main = () => {
                   well.
                 </p>
                 <span className="inline-flex sm:mt-0 mt-4 justify-center sm:justify-start">
-                  <p className="text-xs xl:text-sm font-medium title-font grid items-center text-gray-500/75">
+                  <p className="text-xs xl:text-sm font-medium title-font grid items-center dark:text-gray-200/75 text-gray-500/75">
                     checkout my social links here
                   </p>
                   <div className="grid items-center mr-2">
