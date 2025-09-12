@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import "../../../public/css/home/main.css";
-import { FaGithub, FaLinkedin, FaYoutube, FaSun, FaMoon } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaYoutube, FaSun, FaMoon, FaPhone, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 
@@ -64,12 +64,13 @@ const Main = () => {
     // Typing effect
     const texts = [
       'Full Stack Developer',
-      'React & Next.js Expert',
-      'Cloud Solutions Architect',
-      'PHP & Laravel Developer',
-      'UI/UX Enthusiast',
-      'Problem Solver'
+      'PHP (Codeigniter & Laravel) Developer',
+      'Strong JavaScript Knowledge',
+      'Hands On Experience In React, Next.js, Node.js, Express, MongoDB, MySQL, PHP, and Laravel',
+      'Cloud Solutions & UI/UX Enthusiast',
+      'Strong Problem Solver',
     ];
+
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -260,6 +261,15 @@ const Main = () => {
       </nav>
       {/* Hero Section */}
       <section className="hero" id="home">
+        <div className="hero-image reveal hidden">
+          <Image
+            src="/me-ai.png"
+            alt="Abhishek Biranje"
+            width={400}
+            height={400}
+            className="profile-img"
+          />
+        </div>
         <div className="hero-content">
           <p className="hero-subtitle">Hello, I'm</p>
           <h1 className="hero-title">Abhishek Biranje</h1>
@@ -291,8 +301,8 @@ const Main = () => {
             }}
             className="reveal"
           >
-            I'm not just a developer—I'm a creator of digital solutions. With 5+
-            years of expertise in full-stack development, cloud integrations, and
+            I'm not just a developer — I'm a creator of digital solutions. With 5+
+            years of experience in coding and programming and 3+ years of expertise in full-stack development, cloud integrations, and
             DevOps, I transform ideas into robust and impactful applications.
           </p>
           <div className="about-grid">
@@ -332,7 +342,9 @@ const Main = () => {
               <p>
                 I have hands-on experience with network design, configuration, and
                 troubleshooting. From setting up secure VPNs to optimizing network
-                performance, I ensure seamless connectivity and reliability.
+                performance, I ensure seamless connectivity and reliability. I also
+                manage DNS configuration and setup as well as SMTP email
+                deliverability for businesses.
               </p>
             </div>
           </div>
@@ -349,11 +361,9 @@ const Main = () => {
                 <span className="skill-tag">React.js</span>
                 <span className="skill-tag">Next.js</span>
                 <span className="skill-tag">JavaScript ES6+</span>
-                <span className="skill-tag">TypeScript</span>
                 <span className="skill-tag">Tailwind CSS</span>
                 <span className="skill-tag">HTML5/CSS3</span>
                 <span className="skill-tag">Redux</span>
-                <span className="skill-tag">Material-UI</span>
               </div>
             </div>
             <div className="skill-category reveal">
@@ -386,13 +396,11 @@ const Main = () => {
               <h3>Tools &amp; Others</h3>
               <div className="skill-tags">
                 <span className="skill-tag">Git/GitHub</span>
-                <span className="skill-tag">CI/CD</span>
-                <span className="skill-tag">Webpack</span>
-                <span className="skill-tag">Nginx</span>
+                <span className="skill-tag">Apache/Nginx</span>
                 <span className="skill-tag">Linux</span>
-                <span className="skill-tag">Agile/Scrum</span>
-                <span className="skill-tag">Jest</span>
                 <span className="skill-tag">Postman</span>
+               <span className="skill-tag">DNS</span>
+               <span className="skill-tag">SMTP</span>
               </div>
             </div>
           </div>
@@ -532,7 +540,7 @@ const Main = () => {
             <div className="contact-info reveal">
               <div className="contact-item">
                 <div className="contact-icon">📧</div>
-                <span>abhishek@programwithabhi.com</span>
+                <span>programwithabhi@gmail.com</span>
               </div>
               <div className="contact-item">
                 <div className="contact-icon">📍</div>
@@ -546,9 +554,7 @@ const Main = () => {
                 target="_blank"
                 title="GitHub"
               >
-                <svg width={24} height={24} viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                </svg>
+                <FaGithub />
               </a>
               <a
                 href="https://linkedin.com/in/programwithabhi"
@@ -556,9 +562,7 @@ const Main = () => {
                 target="_blank"
                 title="LinkedIn"
               >
-                <svg width={24} height={24} viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                </svg>
+                <FaLinkedin />
               </a>
               <a
                 href="https://twitter.com/programwithabhi"
@@ -566,18 +570,30 @@ const Main = () => {
                 target="_blank"
                 title="Twitter"
               >
-                <svg width={24} height={24} viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-                </svg>
+                <FaXTwitter />
+              </a>
+              <a
+                href="https://youtube.com/@programwithabhi9206"
+                className="social-link"
+                target="_blank"
+                title="Youtube"
+              >
+                <FaYoutube />
+              </a>
+              <a
+                href="tel:+919604154095"
+                className="social-link"
+                target="_blank"
+                title="Phone"
+              >
+                <FaPhone />
               </a>
               <a
                 href="mailto:programwithabhi@gmail.com"
                 className="social-link"
                 title="Email"
               >
-                <svg width={24} height={24} viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                </svg>
+                <FaEnvelope />
               </a>
             </div>
             <div className="hero-buttons">
@@ -605,9 +621,7 @@ const Main = () => {
       {/* Footer */}
       <footer>
         <p className="footer-text">
-          © {new Date().getFullYear()} Abhishek Biranje. Crafted with passion and code.
-          <br />
-          <span style={{ color: "var(--primary)" }}>programwithabhi</span>
+          © {new Date().getFullYear()} programwithabhi. Crafted with passion and code.
         </p>
       </footer>
     </>
@@ -616,3 +630,4 @@ const Main = () => {
 };
 
 export default Main;
+
