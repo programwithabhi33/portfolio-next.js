@@ -162,18 +162,61 @@ nav.scrolled {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    position: relative;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    position: relative;
+    min-height: 100vh;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    overflow: hidden;
+    color: var(--text-light);
+    background: var(--background-dark);
 }
 
 .hero-content {
-    max-width: 1200px;
-    text-align: center;
-    animation: fadeInUp 1s ease;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.hero-image {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--primary);
+    box-shadow: 0 10px 40px rgba(99, 102, 241, 0.4);
+    animation: reveal 1s ease-in-out;
+}
+
+.hero-image .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scale(1.05);
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), transparent);
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes fadeInUp {
@@ -189,11 +232,15 @@ nav.scrolled {
 }
 
 .hero-subtitle {
-    color: var(--secondary);
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 600;
     margin-bottom: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-title {
@@ -228,6 +275,7 @@ nav.scrolled {
     max-width: 600px;
     margin: 0 auto 2rem;
     line-height: 1.8;
+    height: 50px;
 }
 
 .hero-buttons {
