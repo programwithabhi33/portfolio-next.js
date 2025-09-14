@@ -74,8 +74,8 @@ const Main = () => {
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
-    const typingSpeed = 100;
-    const deletingSpeed = 50;
+    const typingSpeed = 20;
+    const deletingSpeed = 20;
     const pauseTime = 2000;
 
     function typeWriter() {
@@ -416,9 +416,8 @@ const Main = () => {
                 <h3 className="project-title">Cloud Management Platform</h3>
                 <div className="project-tech">
                   <span className="tech-badge">React</span>
-                  <span className="tech-badge">Node.js</span>
-                  <span className="tech-badge">GCP</span>
-                  <span className="tech-badge">MongoDB</span>
+                  <span className="tech-badge">Laravel</span>
+                  <span className="tech-badge">MySQL</span>
                 </div>
               </div>
               <div className="project-body">
@@ -434,7 +433,7 @@ const Main = () => {
                   <li>Subscription and billing module</li>
                 </ul>
                 <div className="project-links">
-                  <a href="#" className="project-link">
+                  <a href="https://silocloud.com" target="_blank" className="project-link">
                     View Details
                   </a>
                 </div>
@@ -462,7 +461,7 @@ const Main = () => {
                   <li>Efficient Laravel backend</li>
                 </ul>
                 <div className="project-links">
-                  <a href="#" className="project-link">
+                  <a href="https://storage.silocloud.io" target="_blank" className="project-link">
                     View Details
                   </a>
                 </div>
@@ -474,7 +473,7 @@ const Main = () => {
                 <div className="project-tech">
                   <span className="tech-badge">Next.js</span>
                   <span className="tech-badge">Firebase</span>
-                  <span className="tech-badge">WebRTC</span>
+                  <span className="tech-badge">Jitsi</span>
                 </div>
               </div>
               <div className="project-body">
@@ -484,13 +483,13 @@ const Main = () => {
                 </p>
                 <ul className="project-features">
                   <li>One-to-one and group chat</li>
-                  <li>Video calling with WebRTC</li>
+                  <li>Video calling with Jitsi integration</li>
                   <li>File sharing and emojis</li>
                   <li>Real-time notifications</li>
                   <li>Responsive Next.js interface</li>
                 </ul>
                 <div className="project-links">
-                  <a href="#" className="project-link">
+                  <a href="https://silotalk.com" target="_blank" className="project-link">
                     View Details
                   </a>
                 </div>
@@ -518,7 +517,34 @@ const Main = () => {
                   <li>Secure payment integration</li>
                 </ul>
                 <div className="project-links">
-                  <a href="#" className="project-link">
+                  <a href="https://therealflow.com" target="_blank" className="project-link">
+                    View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="project-card reveal">
+              <div className="project-header">
+                <h3 className="project-title">Business Listing Platform</h3>
+                <div className="project-tech">
+                  <span className="tech-badge">Laravel</span>
+                  <span className="tech-badge">MySQL</span>
+                  <span className="tech-badge">PHP</span>
+                </div>
+              </div>
+              <div className="project-body">
+                <p className="project-description">
+                  Comprehensive platform for business listing with business
+                  management and revenue tracking systems.
+                </p>
+                <ul className="project-features">
+                  <li>Business management</li>
+                  <li>User subscription management</li>
+                  <li>Analytics and reporting</li>
+                  <li>Secure payment integration</li>
+                </ul>
+                <div className="project-links">
+                  <a href="https://magas.services" target="_blank" className="project-link">
                     View Details
                   </a>
                 </div>
