@@ -1,6 +1,5 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "./home/Navbar";
 import ReduxProvider from "./ReduxProvider";
 
 const poppins = Poppins({
@@ -21,7 +20,6 @@ export default function RootLayout({ children }) {
     <ReduxProvider>
       <html lang="en">
         <body className={poppins.className}>
-          <Navbar />
           {children}
         </body>
       </html>
