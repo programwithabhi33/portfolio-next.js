@@ -271,7 +271,7 @@ const Main = () => {
           />
         </div>
         <div className="hero-content">
-          <p className="hero-subtitle">Hello, I'm</p>
+          <p className="hero-subtitle">Hello, I&apos;m</p>
           <h1 className="hero-title">Abhishek Biranje</h1>
           <p className="hero-description">
             <span className="typing-text" id="typingText" />
@@ -301,7 +301,7 @@ const Main = () => {
             }}
             className="reveal"
           >
-            I'm not just a developer — I'm a creator of digital solutions. With 5+
+            I&apos;m not just a developer — I&apos;m a creator of digital solutions. With 5+
             years of experience in coding and programming and 3+ years of expertise in full-stack development, cloud integrations, and
             DevOps, I transform ideas into robust and impactful applications.
           </p>
@@ -556,10 +556,10 @@ const Main = () => {
       {/* Contact Section */}
       <section className="contact" id="contact">
         <div className="container">
-          <h2 className="section-title reveal">Let's Connect</h2>
+          <h2 className="section-title reveal">Let&apos;s Connect</h2>
           <div className="contact-content">
             <p className="contact-description reveal">
-              I'm always interested in new opportunities and collaborations. Whether
+              I&apos;m always interested in new opportunities and collaborations. Whether
               you have a project in mind or just want to say hello, feel free to
               reach out!
             </p>
