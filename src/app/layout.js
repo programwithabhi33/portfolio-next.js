@@ -1,28 +1,15 @@
-import { Poppins } from "next/font/google";
 import "./globals.css";
-import ReduxProvider from "./ReduxProvider";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  style: "normal",
-  display: "swap",
-});
 
 export const metadata = {
-  title: "Abhishek | Full Stack Developer",
-  description: "Computer science passionate, full stack developer",
+  title: "Abhishek | Backend Developer",
+  description:
+    "Backend Developer — Laravel, Node.js, MySQL, MongoDB, Docker. I build scalable APIs and backend systems with clean architecture and modern DevOps workflows with strong frontend understanding",
 };
 
 export default function RootLayout({ children }) {
-  console.log("Root Layout")
   return (
-    <ReduxProvider>
-      <html lang="en">
-        <body className={poppins.className}>
-          {children}
-        </body>
-      </html>
-    </ReduxProvider>
+    <html lang="en">
+      <body>{children}</body>
+    </html>
   );
 }
