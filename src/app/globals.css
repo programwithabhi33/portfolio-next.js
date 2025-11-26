@@ -5,6 +5,10 @@
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap");
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Satoshi", sans-serif;
 }

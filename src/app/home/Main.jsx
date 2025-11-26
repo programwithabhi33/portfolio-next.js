@@ -17,6 +17,13 @@ import {
   MdDarkMode,
   MdLightMode,
 } from "react-icons/md";
+
+import { FaReact, FaNetworkWired, FaLinux, FaTools } from "react-icons/fa";
+import { VscVm, VscTerminalLinux } from "react-icons/vsc";
+import { SiNeovim, SiDocker, SiTmux } from "react-icons/si";
+import { BsCpu } from "react-icons/bs";
+import { MdPublic } from "react-icons/md";
+
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -252,6 +259,93 @@ export default function Home() {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Additional Strengths Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        className="max-w-5xl mx-auto mt-20 mb-20"
+      >
+        <h2
+          className={`text-2xl font-bold mb-6 ${
+            isDark ? "text-[#f5e0dc]" : "text-[#1e1e2e]"
+          }`}
+        >
+          Additional Strengths
+        </h2>
+
+        <div className="flex flex-wrap gap-3">
+          {/* Strong Frontend Understanding */}
+          <motion.span
+            whileHover={{ scale: 1.08 }}
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20"
+          >
+            <FaReact className="text-blue-400" /> Strong frontend understanding
+            (React)
+          </motion.span>
+
+          {/* Tools */}
+          <motion.span
+            whileHover={{ scale: 1.08 }}
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20"
+          >
+            <SiNeovim className="text-green-400" /> Neovim user
+          </motion.span>
+
+          <motion.span
+            whileHover={{ scale: 1.08 }}
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20"
+          >
+            <SiTmux className="text-lime-300" /> tmux workflow
+          </motion.span>
+
+          <motion.span
+            whileHover={{ scale: 1.08 }}
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20"
+          >
+            <FaLinux className="text-yellow-300" /> Linux
+          </motion.span>
+
+          {/* Networking */}
+          <motion.span
+            whileHover={{ scale: 1.08 }}
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20"
+          >
+            <FaNetworkWired className="text-cyan-300" /> Networking fundamentals
+          </motion.span>
+
+          <motion.span
+            whileHover={{ scale: 1.08 }}
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20"
+          >
+            <MdPublic className="text-blue-200" /> HTTP / HTTPS / DNS
+          </motion.span>
+
+          <motion.span
+            whileHover={{ scale: 1.08 }}
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20"
+          >
+            <VscTerminalLinux className="text-orange-300" /> Request–response
+            model
+          </motion.span>
+
+          {/* Hardware */}
+          <motion.span
+            whileHover={{ scale: 1.08 }}
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20"
+          >
+            <BsCpu className="text-pink-300" /> PC hardware enthusiast
+          </motion.span>
+
+          <motion.span
+            whileHover={{ scale: 1.08 }}
+            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20"
+          >
+            <FaTools className="text-red-300" /> PC building & optimization
+          </motion.span>
+        </div>
+      </motion.div>
     </motion.main>
   );
 }
