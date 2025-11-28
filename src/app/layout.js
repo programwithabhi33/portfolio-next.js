@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Abhishek | Backend Developer",
+  title: "Abhishek | Full Stack Developer",
   description:
-    "Backend Developer — Laravel, Node.js, MySQL, MongoDB, Docker. I build scalable APIs and backend systems with clean architecture and modern DevOps workflows with strong frontend understanding",
+    "Full Stack Developer — React, TailwindCSS, Laravel, Node.js, MySQL, MongoDB, Docker. I build scalable APIs and backend systems with clean architecture and modern DevOps workflows with strong frontend understanding",
 };
 
 export default function RootLayout({ children }) {
