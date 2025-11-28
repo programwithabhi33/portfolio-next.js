@@ -18,6 +18,8 @@ import {
   MdLightMode,
 } from "react-icons/md";
 
+import { SiTailwindcss } from "react-icons/si";
+
 import { FaReact, FaNetworkWired, FaLinux, FaTools } from "react-icons/fa";
 import { VscVm, VscTerminalLinux } from "react-icons/vsc";
 import { SiNeovim, SiDocker, SiTmux } from "react-icons/si";
@@ -93,7 +95,7 @@ export default function Home() {
               isDark ? "text-[#bac2de]" : "text-[#5c5f77]"
             }`}
           >
-            Backend Developer · PHP Laravel · Node.js (Express)
+            Full Stack Developer · Laravel · Node.js · React · TailwindCSS
           </p>
 
           <p
@@ -101,10 +103,11 @@ export default function Home() {
               isDark ? "text-[#a6adc8]" : "text-[#6c6f85]"
             }`}
           >
-            I build scalable backend systems with clean APIs, optimized
-            databases, and solid DevOps fundamentals. Experienced with Laravel,
-            Node.js, MySQL, MongoDB, and Docker — with strong frontend
-            understanding using React.
+            I build full stack applications with scalable backend architectures
+            and clean API design. Specialized in Laravel and Node.js, with
+            strong frontend skills using React and TailwindCSS. Comfortable
+            across the stack — from database design and DevOps fundamentals to
+            building modern UI workflows.
           </p>
 
           {/* Links Row */}
@@ -162,20 +165,19 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.11 }}
             >
-              <a href="mailto:programwithabhi@gmail.com">
-                <MdEmail className="hover:text-[#a6e3a1] transition-colors" />
-              </a>
-            </motion.div>
-
-            <motion.div
-              className="flex flex-wrap gap-5 text-3xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.9, duration: 0.12 }}
-            >
-              <a href="/files/my-resume.pdf" target="_blank" title="Resume">
-                <MdDescription className="hover:text-[#a6e3a1] transition-colors" />
-              </a>
+              <motion.a
+                href="/files/my-resume.pdf"
+                target="_blank"
+                title="Resume"
+                whileHover={{ scale: 1.05 }}
+                className={`
+                  flex items-center gap-2 text-lg font-semibold underline underline-offset-4
+                  ${isDark ? "text-[#89dceb] hover:text-[#a6e3a1]" : "text-[#1e66f5] hover:text-[#179299]"}
+                `}
+              >
+                <MdDescription className="text-2xl" />
+                Resume
+              </motion.a>
             </motion.div>
           </div>
         </motion.div>
@@ -196,67 +198,31 @@ export default function Home() {
             },
           }}
         >
-          <motion.div
-            variants={{
-              hidden: { opacity: 0, y: 20, scale: 0.8 },
-              visible: { opacity: 1, y: 0, scale: 1 },
-            }}
-            whileHover={{ scale: 1.2, rotate: 2 }}
-            transition={{ type: "spring", stiffness: 200 }}
-          >
-            <FaLaravel />
-          </motion.div>
-
-          <motion.div
-            variants={{
-              hidden: { opacity: 0, y: 20, scale: 0.8 },
-              visible: { opacity: 1, y: 0, scale: 1 },
-            }}
-            whileHover={{ scale: 1.2, rotate: 2 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <FaNodeJs />
-          </motion.div>
-          <motion.div
-            variants={{
-              hidden: { opacity: 0, y: 20, scale: 0.8 },
-              visible: { opacity: 1, y: 0, scale: 1 },
-            }}
-            whileHover={{ scale: 1.2, rotate: 2 }}
-            transition={{ type: "spring", stiffness: 400 }}
-          >
-            <SiExpress />
-          </motion.div>
-          <motion.div
-            variants={{
-              hidden: { opacity: 0, y: 20, scale: 0.8 },
-              visible: { opacity: 1, y: 0, scale: 1 },
-            }}
-            whileHover={{ scale: 1.2, rotate: 2 }}
-            transition={{ type: "spring", stiffness: 500 }}
-          >
-            <SiMysql />
-          </motion.div>
-          <motion.div
-            variants={{
-              hidden: { opacity: 0, y: 20, scale: 0.8 },
-              visible: { opacity: 1, y: 0, scale: 1 },
-            }}
-            whileHover={{ scale: 1.2, rotate: 2 }}
-            transition={{ type: "spring", stiffness: 600 }}
-          >
-            <SiMongodb />
-          </motion.div>
-          <motion.div
-            variants={{
-              hidden: { opacity: 0, y: 20, scale: 0.8 },
-              visible: { opacity: 1, y: 0, scale: 1 },
-            }}
-            whileHover={{ scale: 1.2, rotate: 2 }}
-            transition={{ type: "spring", stiffness: 700 }}
-          >
-            <FaDocker />
-          </motion.div>
+          {[
+            { Icon: FaLaravel, stiffness: 200 },
+            { Icon: FaNodeJs, stiffness: 250 },
+            { Icon: SiExpress, stiffness: 300 },
+            { Icon: SiMysql, stiffness: 350 },
+            { Icon: SiMongodb, stiffness: 400 },
+            { Icon: FaDocker, stiffness: 450 },
+            { Icon: FaReact, stiffness: 500 },
+            { Icon: SiTailwindcss, stiffness: 550 },
+          ].map(({ Icon, stiffness }, index) => (
+            <motion.div
+              key={index}
+              variants={{
+                hidden: { opacity: 0, y: 20, scale: 0.8 },
+                visible: { opacity: 1, y: 0, scale: 1 },
+              }}
+              whileHover={{ scale: 1.2, rotate: 2 }}
+              transition={{ type: "spring", stiffness }}
+              animate={{
+                color: isDark ? "#f2cdcd" : "#dc8a78",
+              }}
+            >
+              <Icon />
+            </motion.div>
+          ))}
         </motion.div>
       </div>
 
@@ -276,15 +242,6 @@ export default function Home() {
         </h2>
 
         <div className="flex flex-wrap gap-3">
-          {/* Strong Frontend Understanding */}
-          <motion.span
-            whileHover={{ scale: 1.08 }}
-            className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20"
-          >
-            <FaReact className="text-blue-400" /> Strong frontend understanding
-            (React)
-          </motion.span>
-
           {/* Tools */}
           <motion.span
             whileHover={{ scale: 1.08 }}
