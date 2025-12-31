@@ -406,12 +406,12 @@ export default function Page() {
             </div>
           </div>
 
-          {/* RIGHT: Skills / What I'm Good At (aligned to same container width) */}
+          {/* RIGHT: Skills / What I&apos;m Good At (aligned to same container width) */}
           <div>
             <h2
               className={`text-2xl font-bold mb-6 ${isDark ? "text-[#f5e0dc]" : "text-[#1e1e2e]"}`}
             >
-              What I'm Good At
+              What I&apos;m Good At
             </h2>
 
             <motion.div
