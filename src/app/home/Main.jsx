@@ -32,6 +32,7 @@ import {
   SiNeovim,
   SiTmux,
   SiDocker,
+  SiNextdotjs,
 } from "react-icons/si";
 
 import { VscTerminalLinux } from "react-icons/vsc";
@@ -106,17 +107,18 @@ export default function Page() {
             <p
               className={`text-lg mb-4 ${isDark ? "text-[#bac2de]" : "text-[#5c5f77]"}`}
             >
-              Full Stack Developer · Laravel · Node.js · React · TailwindCSS
+              Full Stack Developer · Laravel · Node.js · Next.js · React &
+              TailwindCSS
             </p>
 
             <p
               className={`leading-relaxed mb-6 ${isDark ? "text-[#a6adc8]" : "text-[#4b5563]"}`}
             >
               I build full-stack applications with scalable backend
-              architectures and clean API design. Specialized in Laravel and
-              Node.js, with strong frontend skills using React and TailwindCSS.
-              Comfortable across the stack — from database design and DevOps
-              fundamentals to modern UI workflows.
+              architectures and clean API design. Specialized in Laravel,
+              Node.js and Next.js, with strong frontend skills using React and
+              TailwindCSS. Comfortable across the stack — from database design
+              and DevOps fundamentals to modern UI workflows.
             </p>
 
             {/* CTA / Links */}
@@ -128,7 +130,7 @@ export default function Page() {
                 transition={{ delay: 0.4, duration: 0.7 }}
               >
                 <a href="https://github.com/programwithabhi33" target="_blank">
-                  <FaGithub className="hover:text-[#a6e3a1] transition-colors" />
+                  <FaGithub className="hover:text-gray-500 transition-colors" />
                 </a>
               </motion.div>
               <motion.div
@@ -141,7 +143,7 @@ export default function Page() {
                   href="https://linkedin.com/in/programwithabhi"
                   target="_blank"
                 >
-                  <FaLinkedin className="hover:text-[#89b4fa] transition-colors" />
+                  <FaLinkedin className="hover:text-blue transition-colors" />
                 </a>
               </motion.div>
               <motion.div
@@ -151,7 +153,7 @@ export default function Page() {
                 transition={{ delay: 0.6, duration: 0.9 }}
               >
                 <a href="https://x.com/programwithabhi" target="_blank">
-                  <SiX className="hover:text-[#a6e3a1] transition-colors" />
+                  <SiX className="hover:text-gray-500 transition-colors" />
                 </a>
               </motion.div>
               <motion.div
@@ -179,7 +181,7 @@ export default function Page() {
               </motion.div>
               {/* Resume CTA - standout */}
               <motion.a
-                href="/files/my-resume.pdf"
+                href="/files/Abhishek_Biranje_Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
                 whileHover={{ scale: 1.04 }}
@@ -219,6 +221,7 @@ export default function Page() {
               { Icon: SiMongodb, stiffness: 400 },
               { Icon: FaDocker, stiffness: 450 },
               { Icon: FaReact, stiffness: 500 },
+              { Icon: SiNextdotjs, stiffness: 500 },
               { Icon: SiTailwindcss, stiffness: 550 },
             ].map(({ Icon, stiffness }, index) => (
               <motion.div
@@ -304,7 +307,7 @@ export default function Page() {
                 <h3
                   className={`text-lg font-semibold ${isDark ? "text-[#89b4fa]" : "text-[#1e66f5]"}`}
                 >
-                  Full Stack Developer — Laravel & React
+                  Full Stack Developer
                 </h3>
                 <p className="text-sm mt-1 text-[#a6adc8]">
                   July 2022 — Oct 2024 · 2.4 years
@@ -313,8 +316,8 @@ export default function Page() {
                 <p
                   className={`mt-3 leading-relaxed ${isDark ? "text-[#cdd6f4]" : "text-[#2f3440]"}`}
                 >
-                  Built scalable applications using Laravel & React. Owned
-                  server management, deployments, Git workflows and Team
+                  Built scalable applications using Laravel, React & Next.js.
+                  Owned server management, deployments, Git workflows and Team
                   management.{" "}
                 </p>
 
@@ -351,56 +354,19 @@ export default function Page() {
                 <h3
                   className={`text-lg font-semibold ${isDark ? "text-[#94e2d5]" : "text-[#04a5e5]"}`}
                 >
-                  Contract / Freelance Developer
+                  Full Stack Developer
                 </h3>
                 <p className="text-sm mt-1 text-[#a6adc8]">
-                  Feb 2025 — Oct 2025 · 9 months
+                  Jan 2025 — Present
                 </p>
 
                 <p
                   className={`mt-3 leading-relaxed ${isDark ? "text-[#cdd6f4]" : "text-[#2f3440]"}`}
                 >
-                  Delivered Laravel projects, containerized using Docker,
-                  managed Linux servers, automated deployments, and optimized
-                  production performance.{" "}
-                </p>
-              </motion.article>
-
-              {/* Item 3 */}
-              <motion.article
-                initial={{ opacity: 0, scale: 0.94 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, type: "spring", stiffness: 160 }}
-                className="relative"
-              >
-                <div
-                  className="absolute -left-14 top-2 w-8 h-8 rounded-full flex items-center justify-center"
-                  style={{
-                    boxShadow: isDark
-                      ? "0 8px 22px rgba(242,205,205,0.12), inset 0 0 10px rgba(242,205,205,0.04)"
-                      : "0 8px 20px rgba(210,15,57,0.08), inset 0 0 6px rgba(210,15,57,0.04)",
-                  }}
-                >
-                  <span
-                    className="w-3 h-3 rounded-full"
-                    style={{ background: isDark ? "#f2cdcd" : "#d20f39" }}
-                  />
-                </div>
-
-                <h3
-                  className={`text-lg font-semibold ${isDark ? "text-[#f2cdcd]" : "text-[#d20f39]"}`}
-                >
-                  Independent Projects
-                </h3>
-                <p className="text-sm mt-1 text-[#a6adc8]">Ongoing</p>
-
-                <p
-                  className={`mt-3 leading-relaxed ${isDark ? "text-[#cdd6f4]" : "text-[#2f3440]"}`}
-                >
-                  Building full-stack apps, experimenting with caching &
-                  background workers, and improving frontend UIs with React +
-                  Tailwind.
+                  Building & handling web application projects from development
+                  to deployment with all technical requirements. Having client
+                  discussions to understand application requirements and
+                  directing my experience{" "}
                 </p>
               </motion.article>
             </div>
@@ -447,8 +413,8 @@ export default function Page() {
                 <p
                   className={`text-sm mt-1 ${isDark ? "text-[#cdd6f4]" : "text-[#2f3440]"}`}
                 >
-                  Laravel, Node.js, API design, background jobs, caching,
-                  etc.,{" "}
+                  API designing, background jobs & caching, database
+                  optimization & structuring with git workflows{" "}
                 </p>
               </motion.div>
 
@@ -469,8 +435,8 @@ export default function Page() {
                 <p
                   className={`text-sm mt-1 ${isDark ? "text-[#cdd6f4]" : "text-[#2f3440]"}`}
                 >
-                  React + TailwindCSS, auth flows, browser security and
-                  performance-minded UI
+                  React + TailwindCSS, auth flows, API integration, browser
+                  tools & security
                 </p>
               </motion.div>
 
@@ -493,36 +459,12 @@ export default function Page() {
                 <p
                   className={`text-sm mt-1 ${isDark ? "text-[#cdd6f4]" : "text-[#2f3440]"}`}
                 >
-                  Docker, Linux, deployments, observability & server
-                  optimization and management
+                  Docker, Linux, deployments & server management with all
+                  required computer networking knowledge
                 </p>
               </motion.div>
 
               {/* card 4 */}
-              <motion.div
-                variants={{
-                  hidden: { opacity: 0, y: 20, scale: 0.8 },
-                  visible: { opacity: 1, y: 0, scale: 1 },
-                }}
-                whileHover={{ rotate: 1 }}
-                transition={{ type: "spring", stiffness: 500 }}
-                animate={{
-                  color: isDark ? "#f2cdcd" : "#dc8a78",
-                }}
-                className={`p-4 rounded-xl transition-shadow border ${isDark ? "backdrop-blur-md bg-white/4 border-white/8 shadow-[0_10px_30px_rgba(0,0,0,0.5)]" : "bg-white/60 border-[#dbe4f3] shadow-md"}`}
-              >
-                <h4 className="font-semibold text-[#cba6f7]">
-                  System Design & Tooling
-                </h4>
-                <p
-                  className={`text-sm mt-1 ${isDark ? "text-[#cdd6f4]" : "text-[#2f3440]"}`}
-                >
-                  Database optimization with structuring, Git workflow and
-                  management{" "}
-                </p>
-              </motion.div>
-
-              {/* FULL-WIDTH Leadership Card */}
               <motion.div
                 variants={{
                   hidden: { opacity: 0, y: 20, scale: 0.8 },
@@ -534,7 +476,7 @@ export default function Page() {
                   color: isDark ? "#f2cdcd" : "#9e9173",
                 }}
                 className={`
-                  col-span-2 p-5 rounded-xl relative overflow-hidden
+                  col-span-1 p-5 rounded-xl relative overflow-hidden
                   border backdrop-blur-md
                   ${isDark ? "bg-white/5 border-white/10" : "bg-white/70 border-[#dbe4f3]"}
                 `}
@@ -567,46 +509,21 @@ export default function Page() {
                 {/* Leadership Badge */}
                 <span
                   className={`
-                    inline-block px-3 py-1 text-xs font-medium rounded-full mb-3
+                    inline-block px-3 py-1 text-xs font-medium rounded-full
                     ${isDark ? "bg-[#f9e2af]/20 text-[#f9e2af]" : "bg-[#f9e2af]/40 text-[#7c6f4a]"}
                   `}
                 >
                   Leadership Skill
                 </span>
 
-                {/* Header Row */}
-                <div className="flex items-center gap-3">
-                  <motion.span
-                    whileHover={{ rotate: 10, scale: 1.2 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <FaUsersCog
-                      className={`text-2xl ${
-                        isDark ? "text-[#f9e2af]" : "text-[#7c6f4a]"
-                      }`}
-                    />
-                  </motion.span>
-
-                  <h4
-                    className={`text-lg font-semibold ${
-                      isDark ? "text-[#f9e2af]" : "text-[#7c6f4a]"
-                    }`}
-                  >
-                    Requirement Understanding & Team Collaboration
-                  </h4>
-                </div>
-
                 {/* Description */}
                 <p
-                  className={`text-sm mt-3 ${
+                  className={`text-sm mt-2 ${
                     isDark ? "text-[#cdd6f4]" : "text-[#2f3440]"
                   }`}
                 >
-                  Able to understand business logic deeply, translate it into
-                  technical tasks, communicate clearly with team members, and
-                  ensure execution aligns with product and business goals.
-                  Strong at requirement analysis, planning, and guiding
-                  implementation with clarity.
+                  Understand business logic & translate it into technical tasks
+                  and ensure execution aligns with business goals.
                 </p>
               </motion.div>
             </motion.div>
@@ -645,21 +562,7 @@ export default function Page() {
               whileHover={{ scale: 1.08 }}
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20 ${isDark ? "backdrop-blur-md bg-white/4 border-white/8 shadow-[0_10px_30px_rgba(0,0,0,0.5)]" : "bg-white/60i"} border-[#dbe4f3] shadow-md`}
             >
-              <SiNeovim className="text-green-400" /> Neovim user
-            </motion.span>
-
-            <motion.span
-              whileHover={{ scale: 1.08 }}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20 ${isDark ? "backdrop-blur-md bg-white/4 border-white/8 shadow-[0_10px_30px_rgba(0,0,0,0.5)]" : "bg-white/60i"} border-[#dbe4f3] shadow-md`}
-            >
-              <SiTmux className="text-lime-300" /> tmux workflow
-            </motion.span>
-
-            <motion.span
-              whileHover={{ scale: 1.08 }}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20 ${isDark ? "backdrop-blur-md bg-white/4 border-white/8 shadow-[0_10px_30px_rgba(0,0,0,0.5)]" : "bg-white/60i"} border-[#dbe4f3] shadow-md`}
-            >
-              <FaLinux className="text-yellow-300" /> Linux
+              <FaLinux className="text-yellow-300" /> Linux User
             </motion.span>
 
             {/* Networking */}
@@ -667,23 +570,8 @@ export default function Page() {
               whileHover={{ scale: 1.08 }}
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20 ${isDark ? "backdrop-blur-md bg-white/4 border-white/8 shadow-[0_10px_30px_rgba(0,0,0,0.5)]" : "bg-white/60i"} border-[#dbe4f3] shadow-md`}
             >
-              <FaNetworkWired className="text-cyan-300" /> Networking
-              fundamentals
-            </motion.span>
-
-            <motion.span
-              whileHover={{ scale: 1.08 }}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20 ${isDark ? "backdrop-blur-md bg-white/4 border-white/8 shadow-[0_10px_30px_rgba(0,0,0,0.5)]" : "bg-white/60i"} border-[#dbe4f3] shadow-md`}
-            >
-              <MdPublic className="text-blue-200" /> HTTP / HTTPS / DNS
-            </motion.span>
-
-            <motion.span
-              whileHover={{ scale: 1.08 }}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20 ${isDark ? "backdrop-blur-md bg-white/4 border-white/8 shadow-[0_10px_30px_rgba(0,0,0,0.5)]" : "bg-white/60i"} border-[#dbe4f3] shadow-md`}
-            >
-              <VscTerminalLinux className="text-orange-300" /> Request–response
-              model
+              <FaNetworkWired className="text-cyan-300" /> Computer Networking
+              Geek
             </motion.span>
 
             {/* Hardware */}
@@ -692,13 +580,6 @@ export default function Page() {
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20 ${isDark ? "backdrop-blur-md bg-white/4 border-white/8 shadow-[0_10px_30px_rgba(0,0,0,0.5)]" : "bg-white/60i"} border-[#dbe4f3] shadow-md`}
             >
               <BsCpu className="text-pink-300" /> PC hardware enthusiast
-            </motion.span>
-
-            <motion.span
-              whileHover={{ scale: 1.08 }}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-lg bg-white/10 border border-white/20 ${isDark ? "backdrop-blur-md bg-white/4 border-white/8 shadow-[0_10px_30px_rgba(0,0,0,0.5)]" : "bg-white/60i"} border-[#dbe4f3] shadow-md`}
-            >
-              <FaTools className="text-red-300" /> PC building & optimization
             </motion.span>
           </div>
         </motion.div>
