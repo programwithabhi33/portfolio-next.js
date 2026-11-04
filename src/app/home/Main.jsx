@@ -96,29 +96,30 @@ export default function Page() {
             <h1
               className={`text-4xl font-bold mb-1 ${isDark ? "text-[#f2cdcd]" : "text-[#3a2a2a]"}`}
             >
-              Abhishek Biranje
+              Hi I&apos;m Abhishek Biranje
             </h1>
             <h2
               className={`text-lg font-medium mb-4 ${isDark ? "text-[#f5e0dc]" : "text-[#6b1b2b]"}`}
             >
-              (programwithabhi)
+              (also known as programwithabhi)
             </h2>
 
             <p
               className={`text-lg mb-4 ${isDark ? "text-[#bac2de]" : "text-[#5c5f77]"}`}
             >
-              Full Stack Developer · Laravel · Node.js · Next.js · React &
-              TailwindCSS
+              Full Stack Developer | Backend-focused | Laravel | Node.js |
+              Next.js
             </p>
 
             <p
               className={`leading-relaxed mb-6 ${isDark ? "text-[#a6adc8]" : "text-[#4b5563]"}`}
             >
-              I build full-stack applications with scalable backend
-              architectures and clean API design. Specialized in Laravel,
-              Node.js and Next.js, with strong frontend skills using React and
-              TailwindCSS. Comfortable across the stack — from database design
-              and DevOps fundamentals to modern UI workflows.
+              I build and maintain web applications, backend APIs, and
+              deployment environments, with a focus on scalable architecture and
+              clean API design. Experienced with Laravel, PHP, React, Node.js,
+              MySQL, Docker, and Linux administration. I?m also familiar with
+              AI-assisted development using Claude Code, prompt design, MCP
+              concepts, and LLM fundamentals.
             </p>
 
             {/* CTA / Links */}
@@ -253,126 +254,9 @@ export default function Page() {
         </div>
       </section>
 
-      {/* uniform section wrapper helper: same left/right boundaries */}
-      {/* EXPERIENCE + SKILLS in two-column (left timeline, right skills) */}
-      <section className={`${container} mt-16`}>
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          {/* LEFT: Timeline column */}
-          <div className="relative">
-            <h2
-              className={`text-2xl font-bold mb-6 ${isDark ? "text-[#f5e0dc]" : "text-[#1e1e2e]"}`}
-            >
-              Experience Timeline
-            </h2>
-
-            {/* vertical line: positioned further from text to give breathing room */}
-            <div
-              aria-hidden
-              className={`absolute left-8 top-14 bottom-0 w-1 rounded ${
-                isDark
-                  ? "bg-gradient-to-b from-[#89b4fa]/50 via-[#94e2d5]/35 to-[#f2cdcd]/20"
-                  : "bg-gradient-to-b from-[#1e66f5]/50 via-[#04a5e5]/35 to-[#d20f39]/20"
-              } shadow-sm`}
-              style={{ transform: "translateX(-50%)" }}
-            />
-
-            {/* timeline items container with padding-left to give space from line */}
-            <div className="pl-12">
-              {/* Item 1 */}
-              <motion.article
-                initial={{ opacity: 0, x: -48 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
-                className="mb-10 relative"
-              >
-                {/* dot */}
-                <div
-                  className="absolute -left-14 top-2 w-8 h-8 rounded-full flex items-center justify-center"
-                  style={{
-                    boxShadow: isDark
-                      ? "0 8px 22px rgba(137,180,250,0.12), inset 0 0 10px rgba(137,180,250,0.05)"
-                      : "0 8px 20px rgba(30,102,245,0.08), inset 0 0 6px rgba(30,102,245,0.04)",
-                  }}
-                >
-                  <span
-                    className="w-3 h-3 rounded-full"
-                    style={{
-                      background: isDark ? "#89b4fa" : "#1e66f5",
-                      display: "block",
-                    }}
-                  />
-                </div>
-
-                <h3
-                  className={`text-lg font-semibold ${isDark ? "text-[#89b4fa]" : "text-[#1e66f5]"}`}
-                >
-                  Full Stack Developer
-                </h3>
-                <p className="text-sm mt-1 text-[#a6adc8]">
-                  July 2022 — Oct 2024 · 2.4 years
-                </p>
-
-                <p
-                  className={`mt-3 leading-relaxed ${isDark ? "text-[#cdd6f4]" : "text-[#2f3440]"}`}
-                >
-                  Built scalable applications using Laravel, React & Next.js.
-                  Owned server management, deployments, Git workflows and Team
-                  management.{" "}
-                </p>
-
-                <div className="flex items-center gap-2 mt-3 text-yellow-300">
-                  <FaStar />
-                  <span className="text-sm">
-                    Employee of the Month — recognized for ownership & impact
-                  </span>
-                </div>
-              </motion.article>
-
-              {/* Item 2 */}
-              <motion.article
-                initial={{ opacity: 0, x: 48, rotate: 6 }}
-                whileInView={{ opacity: 1, x: 0, rotate: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, type: "spring", stiffness: 80 }}
-                className="mb-10 relative"
-              >
-                <div
-                  className="absolute -left-14 top-2 w-8 h-8 rounded-full flex items-center justify-center"
-                  style={{
-                    boxShadow: isDark
-                      ? "0 8px 22px rgba(148,226,213,0.12), inset 0 0 10px rgba(148,226,213,0.04)"
-                      : "0 8px 20px rgba(4,165,229,0.08), inset 0 0 6px rgba(4,165,229,0.04)",
-                  }}
-                >
-                  <span
-                    className="w-3 h-3 rounded-full"
-                    style={{ background: isDark ? "#94e2d5" : "#04a5e5" }}
-                  />
-                </div>
-
-                <h3
-                  className={`text-lg font-semibold ${isDark ? "text-[#94e2d5]" : "text-[#04a5e5]"}`}
-                >
-                  Full Stack Developer
-                </h3>
-                <p className="text-sm mt-1 text-[#a6adc8]">
-                  Jan 2025 — Present
-                </p>
-
-                <p
-                  className={`mt-3 leading-relaxed ${isDark ? "text-[#cdd6f4]" : "text-[#2f3440]"}`}
-                >
-                  Building & handling web application projects from development
-                  to deployment with all technical requirements. Having client
-                  discussions to understand application requirements and
-                  directing my experience{" "}
-                </p>
-              </motion.article>
-            </div>
-          </div>
-
-          {/* RIGHT: Skills / What I&apos;m Good At (aligned to same container width) */}
+      {/* Skills section */}
+      <section className={`${container} mt-8`}>
+        <div className="max-w-4xl mx-auto">
           <div>
             <h2
               className={`text-2xl font-bold mb-6 ${isDark ? "text-[#f5e0dc]" : "text-[#1e1e2e]"}`}
@@ -526,6 +410,26 @@ export default function Page() {
                   and ensure execution aligns with business goals.
                 </p>
               </motion.div>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 20, scale: 0.8 },
+                  visible: { opacity: 1, y: 0, scale: 1 },
+                }}
+                whileHover={{ rotate: 1 }}
+                transition={{ type: "spring", stiffness: 700 }}
+                animate={{ color: isDark ? "#f2cdcd" : "#dc8a78" }}
+                className={`p-4 rounded-xl transition-shadow border ${isDark ? "backdrop-blur-md bg-white/4 border-white/8 shadow-[0_10px_30px_rgba(0,0,0,0.5)]" : "bg-white/60 border-[#dbe4f3] shadow-md"}`}
+              >
+                <h4 className="font-semibold text-[#cba6f7]">
+                  AI-Assisted Development
+                </h4>
+                <p
+                  className={`text-sm mt-1 ${isDark ? "text-[#cdd6f4]" : "text-[#2f3440]"}`}
+                >
+                  Familiar with Claude Code, prompt design, MCP concepts, and
+                  LLM fundamentals.
+                </p>
+              </motion.div>
             </motion.div>
           </div>
         </div>
@@ -594,10 +498,9 @@ export default function Page() {
               <FaQuoteLeft className="text-3xl text-[#f2cdcd]" />
               <div>
                 <p className="text-lg leading-relaxed">
-                  “During his 2.4 years with us, Abhishek consistently
-                  demonstrated strong backend ownership, reliable server
-                  management skills, and the ability to ship production-ready
-                  features. His efforts earned him the{" "}
+                  “Abhishek consistently demonstrated strong backend ownership,
+                  reliable server management skills, and the ability to ship
+                  production-ready features. His efforts earned him the{" "}
                   <strong>Employee of the Month</strong> award — a recognition
                   of his impact and professionalism.”
                 </p>
