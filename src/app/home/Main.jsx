@@ -117,8 +117,8 @@ export default function Page() {
               I build and maintain web applications, backend APIs, and
               deployment environments, with a focus on scalable architecture and
               clean API design. Experienced with Laravel, PHP, React, Node.js,
-              MySQL, Docker, and Linux administration. I?m also familiar with
-              AI-assisted development using Claude Code, prompt design, MCP
+              MySQL, Docker, and Linux administration. I&apos;m also familiar
+              with AI-assisted development using Claude Code, prompt design, MCP
               concepts, and LLM fundamentals.
             </p>
 
